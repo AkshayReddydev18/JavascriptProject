@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Train Information</title>
+    <link rel="stylesheet" href="project.css">
+    <!-- <link rel="stylesheet" href="project.js"> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Real-time Train Information</h1>
+
+        <!-- Search for Station -->
+        <div class="search-section">
+            <h2>Search Station</h2>
+            <input type="text" id="stationName" placeholder="Enter Station Name">
+            <button onclick="searchStation()">Search</button>
+            <div id="stationResult"></div>
+        </div>
+
+        <!-- Search for Train -->
+        <div class="search-section">
+            <h2>Search Train</h2>
+            <input type="text" id="trainNumber" placeholder="Enter Train Number or Name">
+            <button onclick="searchTrain()">Search</button>
+            <div id="trainResult"></div>
+        </div>
+
+        <!-- Trains Between Stations -->
+        <div class="search-section">
+            <h2>Trains Between Stations</h2>
+            <input type="text" id="sourceStation" placeholder="Enter Source Station">
+            <input type="text" id="destinationStation" placeholder="Enter Destination Station">
+            <button onclick="trainsBetweenStations()">Search</button>
+            <div id="trainsBetweenResult"></div>
+        </div>
+
+        <!-- Get PNR Status -->
+        <div class="search-section">
+            <h2>Get PNR Status</h2>
+            <input type="text" id="pnrNumber" placeholder="Enter PNR Number">
+            <button onclick="getPnrStatus()">Get Status</button>
+            <div id="pnrResult"></div>
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
